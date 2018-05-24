@@ -5,6 +5,7 @@ package org.andylabs.demo.mappers;
 
 
 import org.andylabs.demo.domain.User;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -12,6 +13,7 @@ import java.util.List;
  * @author Siva
  *
  */
+@Repository
 public interface UserMapper
 {
 
