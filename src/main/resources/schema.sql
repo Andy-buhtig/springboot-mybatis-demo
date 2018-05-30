@@ -1,6 +1,5 @@
 
 DROP TABLE IF EXISTS USERS;
-
 CREATE TABLE users (
   id int(11) NOT NULL AUTO_INCREMENT,
   name varchar(100) NOT NULL,
@@ -8,3 +7,17 @@ CREATE TABLE users (
   PRIMARY KEY (id)
 );
 
+DROP TABLE IF EXISTS `Enterprise`;
+CREATE TABLE `Enterprise`(
+	`id` VARCHAR (18) NOT NULL COMMENT '唯一Id',
+	`createTime` TIMESTAMP COMMENT '创建时间',
+	`modifyTime` TIMESTAMP NOT NULL COMMENT '修改时间',
+	`code` VARCHAR (128) NOT NULL COMMENT '编码',
+	`parentId` VARCHAR (18) NOT NULL COMMENT '上级Id',
+	`name` VARCHAR (128) NOT NULL COMMENT '名称',
+	`postCode` VARCHAR (128) NOT NULL COMMENT '邮编',
+	`phoneNumber` VARCHAR (128) NOT NULL COMMENT '电话',
+	`address` VARCHAR (128) NOT NULL COMMENT '地址',
+	PRIMARY KEY (`id`)
+)
+ENGINE=InnoDB DEFAULT CHARSET=utf8;

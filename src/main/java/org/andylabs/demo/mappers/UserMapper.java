@@ -22,5 +22,5 @@ public interface UserMapper
 	User findUserById(Integer id);
 
 	List<User> findAllUsers();
-	
+
 }
