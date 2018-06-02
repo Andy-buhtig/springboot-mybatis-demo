@@ -2,7 +2,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="org.andylabs.demo.mappers.EnterpriseMapper">
+<mapper namespace="org.andylabs.demo.mappers.EnterpriseRepository">
 
     <resultMap id="EnterpriseResultMap" type="Enterprise">
         <id column="id" property="id"/>

@@ -1,0 +1,12 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.andylabs.demo.mappers.EnterpriseRepository">
+
+    <select id="findEnterprise" resultMap="EnterpriseResultMap">
+        select id, createTime, modifyTime, code, parentId, name, postCode, phoneNumber, address from enterprise where code = #{mycode}
+    </select>
+
+
+</mapper>
